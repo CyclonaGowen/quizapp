@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div class="ctr">
+    <div class="questions-ctr">
+        <div class="progress">
+            <div class="bar"></div>
+            <div class="status">Dummy Data 1 out of 3 questions answered</div>
+        </div>
+        <div class="single-question">
+            <div class="question">Dummy Data Sample Question 1</div>
+            <div class="answers">
+                <div class="answer">Dummy Data Sample  Answer 1</div>
+                <div class="answer">Dummy Data Sample  Answer 2</div>
+                <div class="answer">Dummy Data Sample  Answer 3</div>
+                <div class="answer">Dummy Data Sample  Answer 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div class="title">You got dummy sample result 1!</div>
+        <div class="desc">
+            Enter a short description here about the result.
+        </div>
+    </div>
+    <button type="button" class="reset-btn">Reset</button>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
